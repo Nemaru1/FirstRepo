@@ -28,7 +28,7 @@ public class ContactController {
         return service.save(contact);
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public Contact update(@PathVariable("id")int id, @RequestBody Contact contact){
         return service.update(id, contact);
     }
